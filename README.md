@@ -2,5 +2,5 @@
 
 ## INTRODUCTION
 
-Math utilities is a open source repo with several math operations includin linear algebra 
+Math utilities is a open source repo with several math operations including linear algebra 
 and calculus. 
