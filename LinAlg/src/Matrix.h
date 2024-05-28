@@ -22,11 +22,12 @@ public:
 
 	bool isSquare();
 	static bool canAdd(const Matrix& right, const Matrix& left);
-	bool canMultiply(const Matrix& right, const Matrix& left);
+	static bool canMultiply(const Matrix& right, const Matrix& left);
 	bool indexOutRange(int row, int column) const;
 
 	void set(int row, int column, double data);
 	const double get(int row, int column) const;
+	double& value(int row, int column);
 
 	//OPERATOR OVERLOADING
 	friend std::ostream& operator<<(std::ostream& left, const Matrix& right);

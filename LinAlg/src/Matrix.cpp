@@ -64,6 +64,16 @@ const double Matrix::get(int row, int column) const {
 	}
 }
 
+double& Matrix::value(int row, int column) {
+	if (!indexOutRange(row, column)) {
+		return m_buffer[row * m_columns + column];
+	}
+	else{
+		std::cout << "Unable to get value.Index out or range. Returned first value";
+		return m_buffer[0];
+	}
+}
+
 //	OPERATOR OVERLOADING
 std::ostream& operator<<(std::ostream& left, const Matrix& right) {
 	for (int i = 0; i < right.m_rows; i++) {
